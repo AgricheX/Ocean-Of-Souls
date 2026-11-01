@@ -1,0 +1,222 @@
+{
+  "oos_group_general": [
+    {
+      "Id": "oos_cfg_all_worlds",
+      "Type": "SWITCH",
+      "BoolVal": false,
+      "Callback": "OceanOfSouls.SoulConfig:AllWorldsCallBack"
+    },
+    {
+      "Id": "oos_cfg_priority_min_level",
+      "Type": "INT_SLIDER",
+      "IntVal": 5,
+      "MinIntVal": 1,
+      "MaxIntVal": 8,
+      "Callback": "OceanOfSouls.SoulConfig:PriorityMinLevelCallBack"
+    },
+    {
+      "Id": "oos_cfg_priority_chance",
+      "Type": "INT_SLIDER",
+      "IntVal": 60,
+      "MinIntVal": 0,
+      "MaxIntVal": 100,
+      "Callback": "OceanOfSouls.SoulConfig:PriorityChanceCallBack"
+    }
+  ],
+  "oos_group_save": [
+    {
+      "Id": "oos_cfg_save_level_0",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:SaveLevel0CallBack"
+    },
+    {
+      "Id": "oos_cfg_save_level_1",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:SaveLevel1CallBack"
+    },
+    {
+      "Id": "oos_cfg_save_level_2",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:SaveLevel2CallBack"
+    },
+    {
+      "Id": "oos_cfg_save_level_3",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:SaveLevel3CallBack"
+    },
+    {
+      "Id": "oos_cfg_save_level_4",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:SaveLevel4CallBack"
+    },
+    {
+      "Id": "oos_cfg_save_level_5",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:SaveLevel5CallBack"
+    },
+    {
+      "Id": "oos_cfg_save_level_6",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:SaveLevel6CallBack"
+    },
+    {
+      "Id": "oos_cfg_save_level_7",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:SaveLevel7CallBack"
+    }
+  ],
+  "oos_group_storage": [
+    {
+      "Id": "oos_cfg_max_souls",
+      "Type": "INT_SLIDER",
+      "IntVal": 0,
+      "MinIntVal": 0,
+      "MaxIntVal": 5000,
+      "Callback": "OceanOfSouls.SoulConfig:MaxSoulsPerLevelCallBack"
+    }
+  ],
+  "oos_group_points": [
+    {
+      "Id": "oos_cfg_level_thresholds",
+      "Type": "TEXT",
+      "TextVal": "50,500,1500,4500,10000,40000,90000",
+      "Callback": "OceanOfSouls.SoulConfig:LevelThresholdsCallBack"
+    },
+    {
+      "Id": "oos_cfg_weight_lives",
+      "Type": "SLIDER",
+      "FloatVal": 1.0,
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 5.0,
+      "Callback": "OceanOfSouls.SoulConfig:WeightLivesCallBack"
+    },
+    {
+      "Id": "oos_cfg_weight_deeds",
+      "Type": "SLIDER",
+      "FloatVal": 1.0,
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 5.0,
+      "Callback": "OceanOfSouls.SoulConfig:WeightDeedsCallBack"
+    },
+    {
+      "Id": "oos_cfg_weight_age",
+      "Type": "SLIDER",
+      "FloatVal": 1.0,
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 5.0,
+      "Callback": "OceanOfSouls.SoulConfig:WeightAgeCallBack"
+    },
+    {
+      "Id": "oos_cfg_short_life_gap",
+      "Type": "INT_SLIDER",
+      "IntVal": 5,
+      "MinIntVal": 0,
+      "MaxIntVal": 50,
+      "Callback": "OceanOfSouls.SoulConfig:ShortLifeGapYearsCallBack"
+    },
+    {
+      "Id": "oos_cfg_short_life_penalty",
+      "Type": "SLIDER",
+      "FloatVal": 2.0,
+      "MinFloatVal": 0.0,
+      "MaxFloatVal": 20.0,
+      "Callback": "OceanOfSouls.SoulConfig:ShortLifePenaltyPerYearCallBack"
+    },
+    {
+      "Id": "oos_cfg_short_life_cap",
+      "Type": "INT_SLIDER",
+      "IntVal": 50,
+      "MinIntVal": 0,
+      "MaxIntVal": 1000,
+      "Callback": "OceanOfSouls.SoulConfig:ShortLifePenaltyCapCallBack"
+    }
+  ],
+  "oos_group_reincarnation": [
+    {
+      "Id": "oos_cfg_inherit_traits_level",
+      "Type": "INT_SLIDER",
+      "IntVal": 4,
+      "MinIntVal": 1,
+      "MaxIntVal": 8,
+      "Callback": "OceanOfSouls.SoulConfig:InheritTraitsMinLevelCallBack"
+    },
+    {
+      "Id": "oos_cfg_decorate_name",
+      "Type": "SWITCH",
+      "BoolVal": true,
+      "Callback": "OceanOfSouls.SoulConfig:DecorateNameCallBack"
+    }
+  ],
+  "oos_group_protagonist": [
+    {
+      "Id": "oos_cfg_protagonist_denominator",
+      "Type": "TEXT",
+      "TextVal": "1000000",
+      "Callback": "OceanOfSouls.SoulConfig:ProtagonistDenominatorCallBack"
+    },
+    {
+      "Id": "oos_cfg_finger_absorb",
+      "Type": "INT_SLIDER",
+      "IntVal": 20,
+      "MinIntVal": 0,
+      "MaxIntVal": 100,
+      "Callback": "OceanOfSouls.SoulConfig:FingerAbsorbCallBack"
+    },
+    {
+      "Id": "oos_cfg_finger_system",
+      "Type": "INT_SLIDER",
+      "IntVal": 20,
+      "MinIntVal": 0,
+      "MaxIntVal": 100,
+      "Callback": "OceanOfSouls.SoulConfig:FingerSystemCallBack"
+    },
+    {
+      "Id": "oos_cfg_finger_second_chance",
+      "Type": "INT_SLIDER",
+      "IntVal": 20,
+      "MinIntVal": 0,
+      "MaxIntVal": 100,
+      "Callback": "OceanOfSouls.SoulConfig:FingerSecondChanceCallBack"
+    },
+    {
+      "Id": "oos_cfg_finger_aura",
+      "Type": "INT_SLIDER",
+      "IntVal": 20,
+      "MinIntVal": 0,
+      "MaxIntVal": 100,
+      "Callback": "OceanOfSouls.SoulConfig:FingerAuraCallBack"
+    },
+    {
+      "Id": "oos_cfg_finger_memory",
+      "Type": "INT_SLIDER",
+      "IntVal": 20,
+      "MinIntVal": 0,
+      "MaxIntVal": 100,
+      "Callback": "OceanOfSouls.SoulConfig:FingerMemoryCallBack"
+    }
+  ],
+  "oos_group_ladder": [
+    {
+      "Id": "oos_cfg_top_of_ladder",
+      "Type": "SWITCH",
+      "BoolVal": false,
+      "Callback": "OceanOfSouls.SoulConfig:TopOfLadderCallBack"
+    }
+  ],
+  "oos_group_debug": [
+    {
+      "Id": "oos_cfg_debug_log",
+      "Type": "SWITCH",
+      "BoolVal": false,
+      "Callback": "OceanOfSouls.SoulConfig:DebugLogCallBack"
+    }
+  ]
+}
